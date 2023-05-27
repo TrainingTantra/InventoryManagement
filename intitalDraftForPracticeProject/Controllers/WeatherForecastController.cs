@@ -7,7 +7,7 @@ namespace intitalDraftForPracticeProject.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        Class1 cl = new Class1();
+        PingService cl = new PingService();
 
         private readonly ILogger<WeatherForecastController> _logger;
 
