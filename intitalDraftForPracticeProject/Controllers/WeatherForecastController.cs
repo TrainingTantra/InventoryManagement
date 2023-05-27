@@ -8,7 +8,7 @@ namespace intitalDraftForPracticeProject.Controllers
     [Route("[controller]")]
     public class InventoryController : ControllerBase
     {
-        PingService cl = new PingService();
+        readonly PingService service = new PingService();
 
         private readonly ILogger<InventoryController> _logger;
 
@@ -19,12 +19,12 @@ namespace intitalDraftForPracticeProject.Controllers
         [HttpGet("ping")]
         public string ping()
         {
-            return cl.Ping();
+            return service.Ping();
         }
         [HttpGet("StudentDetails")]
         public IEnumerable<StudentDetails>? StudentDetails([FromHeader] int id)
         {
-            var result = cl.StudentDetails(id);
+            var result = service.StudentDetails(id);
             return result;
         }
     }
