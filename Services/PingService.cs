@@ -1,8 +1,8 @@
 ﻿namespace Services
 {
-    public class Class1
+    public class PingService
     {
-        public string ping()
+        public string Ping()
         {
             return "Hi..";
         }
