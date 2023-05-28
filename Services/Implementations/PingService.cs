@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace Services
 {
-    public class PingService
+    public class PingService:IPingService
     {
         public string Ping()
         {
