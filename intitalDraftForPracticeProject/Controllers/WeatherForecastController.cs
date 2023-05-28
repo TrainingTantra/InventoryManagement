@@ -1,3 +1,4 @@
+using InternalModels;
 using Microsoft.AspNetCore.Mvc;
 using Services;
 
@@ -5,20 +6,26 @@ namespace intitalDraftForPracticeProject.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class InventoryController : ControllerBase
     {
-        PingService cl = new PingService();
+        readonly PingService service = new PingService();
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<InventoryController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public InventoryController(ILogger<InventoryController> logger)
         {
             _logger = logger;
         }
         [HttpGet("ping")]
         public string ping()
         {
-            return cl.ping();
+            return service.Ping();
+        }
+        [HttpGet("StudentDetails")]
+        public IEnumerable<StudentDetails>? StudentDetails([FromHeader] int id)
+        {
+            var result = service.StudentDetails(id);
+            return result;
         }
     }
 }
