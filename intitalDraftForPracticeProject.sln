@@ -7,11 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "intitalDraftForPracticeProject", "intitalDraftForPracticeProject\intitalDraftForPracticeProject.csproj", "{D4A76919-6CF8-4CF1-9C56-93F8385C38AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalModels", "InternalModels\InternalModels.csproj", "{6404E4F6-02AE-42D4-934F-726EC34763F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternalModels", "InternalModels\InternalModels.csproj", "{6404E4F6-02AE-42D4-934F-726EC34763F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonData", "CommonData\CommonData.csproj", "{7326E6C7-5986-46D4-8175-6B5FBE81D1DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonData", "CommonData\CommonData.csproj", "{7326E6C7-5986-46D4-8175-6B5FBE81D1DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{C0B4ECF5-78C6-4570-A833-C3E6FD747E98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{C0B4ECF5-78C6-4570-A833-C3E6FD747E98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{EF38929E-6FED-4F85-989B-859020E927C2}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\Inventory_Management.pdf = ..\..\..\..\Downloads\Inventory_Management.pdf
+		..\..\..\..\Downloads\Inventory_Management.sql = ..\..\..\..\Downloads\Inventory_Management.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
