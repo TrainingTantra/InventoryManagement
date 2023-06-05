@@ -15,6 +15,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddRequiredServices(builder.Configuration);
 builder.Services.AddDataRegistrations(builder.Configuration);
+
+
 //authentication 
 var key = "This is my secret key manikishore";
 
@@ -34,7 +36,6 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience= false
     };
 });
-;
 
 builder.Services.AddSingleton<IAuthenticationManager>(new AuthenticationManager(key));
 

@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace CommonData
 {
-    public class Roles
+    public class ProductTypes
     {
         public int id { get; set; }
-        public string? RoleName { get; set; }
-        public string? Modules { get; set; }
-        public bool? Status { get; set; }
+        public string? producttype { get; set; }
+        public int taxid { get; set; }
     }
 }
